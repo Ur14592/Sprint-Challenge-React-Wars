@@ -26,13 +26,27 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React is a UI built by Facebook, and the best thing it solves is that it renders fast with DOM. It loads what is being rendered to the page instead of updating the data all at once. 
+React breaks the pages down into tiny pieces called components. Instead of having to update an entire page for one change, you only have to update the one component and the rest of the page stays the same. 
+React breaks code into maintainable, manageable, reusable piece of code.
+
 - [ ] What does it mean to _think_ in react?
+
+Thinking in react means to break down the app up into smaller usable components. Having these small functional components makes
+styling easier and makes our code more DRY as we can add new objects or new code. 
 
 - [ ] Describe state.
 
+State is the data available in our app; data that component needs & the ability components have to update/access data; State is mutable
+
 - [ ] Describe props.
 
+Props is when state is passed around as properties; Props are immutable
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+A side effect is anything that affects something outside the scope of the function being executed.
+We can sync our side effects with state or props changes. Its done by passing in a dependency array as the second argument to the effect hook.
 
 ## Project Set Up
 
