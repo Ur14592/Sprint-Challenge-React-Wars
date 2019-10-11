@@ -31,12 +31,15 @@ axios
 
 
 
-const Container = styled.div`
-  color: #000000;
-  
-`;
-const Div = styled.div`
 
+const Div = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap:nowrap;
+  padding:1.5rem;
+  background:#5D4B43;
 `;
 
 
@@ -44,7 +47,6 @@ const Div = styled.div`
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <Container>
         <Div>
           {data.map(data => {
             return (
@@ -59,7 +61,6 @@ const Div = styled.div`
             );
           })}
         </Div>
-      </Container>
     </div>
   );
 }
